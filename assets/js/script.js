@@ -4,10 +4,17 @@ var year = document.querySelector("#yearinput");
 var media = document.querySelector("#mediainput");
 var imbdId = document.querySelector("#IMBdinput");
 var apikey = "27e13cea";
-var prevSearches = [];
+var prevSearches = JSON.parse(localStorage.getItem("searches")) || [];
 
+autoSearch();
 
 searchBtn.addEventListener("click", searchFunction);
+
+function autoSearch(){
+    $("#searchinput").autocomplete({
+      source: prevSearches
+    });
+}
 
 function searchFunction(){
   if(!movieTitle.value){
@@ -21,7 +28,8 @@ function searchFunction(){
     return searchFunction;
   } else {
     movieTitle = movieTitle.value.replaceAll(" ", "+");
-
+    prevSearches.push(movieTitle);
+    localStorage.setItem("searches", JSON.stringify(prevSearches));
     year = year.value;
     media = media.value;
     imbdId = imbdId.value;
