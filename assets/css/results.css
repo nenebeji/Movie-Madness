@@ -1,3 +1,9 @@
+* {
+    color: white;
+    border-radius: 10px;
+}
+
+
 p {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -7,48 +13,69 @@ pre {
     line-height: 1.2; 
 }
 
+body {
+background-image: url("../img/lionking.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .moviedetails-container {
    box-sizing: border-box;
-   border: solid red;
+
    margin-top: 20px;
    margin-left: 10px;
    height: 95vh;
+   background-color: none;
+   opacity: 0.8;
+
+
 }
 
 .movietitle-container h2 {
     padding: 20px;
     border: solid black;
     margin-bottom: 3rem;
+    background-color: black;
+    opacity: 0.8;
+
 }
 .movietitle-container {
-    border: solid red;
     margin-top: 20px;
     height: 95vh;
     margin-right: 10px;
+    background-color: none;
+    opacity: 0.8;
 }
 
 #player {
-    border: solid black;
+ 
     min-width: 200px;
     min-height: 350px;
+    background-color: black;
+    opacity: 0.8;
+    
 }
 
 .movieimage {
     height: 65vh;
+    background-color: black;
+    opacity: 0.8;
 }
 
 .plot {
     box-sizing: border-box;
     margin-top: 3rem;
-    border: solid red;
     height: 35vh;
     padding: 5px 0;
+    background-color: black;
+    opacity: 0.8;
 }
 
 .ratings {
     box-sizing: border-box;
     margin-top: 3rem;
-    border: solid red;
     height: 35vh;
     padding: 5px 0;
+    background-color: black;
+    opacity: 0.8;
 }
