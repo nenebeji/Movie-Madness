@@ -4,78 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result ----Movie Madness</title>
+
+    <title>Movie Madness | Results</title>
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/results.css">
 </head>
-<body> 
-    <div class="ui stackable two column grid container">
-        <div class="ui stretched row">
-            <div class="ui column grid ">  
-                <div class="teal row very padded centred">
-                        <h2 class="ui header">MovieTitle :<span id="MovieTitle">Batman</span></h2>  
+<body>
+    <div class="ui container fluid">
+        <div class="ui grid">
+            <div class="left floated nine wide column moviedetails-container" id="moviedetails-container">
+                <div id="player"></div>
+                <div class="ui grid container plotrate">
+                    <div class="left floated nine wide column plot" id="plot">
+                        <h2>Plot</h2>
+                        <p><span id="plot-info"></span>When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement</span></p>
+                    </div>
+                    <div class="right floated six wide column ratings" id="ratings">
+                        <h2>Ratings</h2>
+                        <p>
+                        <pre>
+Rotten Tomatoes:<span id="rottenT">0</span>%
+IMDb Rating: <span id="IMDb-rating">0</span>
+Metacritic: <span id="metacritic">0</span>
+Metascore: <span id="metascore">0</span>
+                        </pre>
+                        </p>
+                    </div>
                 </div>
-
-                <div class="ui blue row">    
-                    <img src="https://m.media-amazon.com/images/M/MV5BOTYwZDNlMDMtZWRkNC00NzNkLTk2ZDMtNGQ1MmEwNzAwZGZhXkEyXkFqcGdeQXVyMjg2MTMyNTM@._V1_SX300.jpg"
-                     alt="movie poster">
-                </div>
-            </div>   
-
-
-            <div class="ui column grid">
-                <div class="ui grey row padded">
-                    <iframe id="Trailer" width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>                    
-                </div>
-                <div class="ui row" >
-                    <p>Year of Release:<span id="YearofRelease"></span></p>
-                </div>    
-                <div class="ui row"> 
-                    <p>rated<span id="rated"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Released date:<span id="ReleaseDate"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Season:<span id="SeasonNo"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Episode:<span id="EpisodeNo"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Runtime:<span id="Runtime"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Genre:<span id="Genre"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Director:<span id="Director"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Writer:<span id="Writer"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Actors:<span id="Actors"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Plot:<span id="Plot"></span></p>
-                </div>    
-                <div class="ui row">
-                    <p>Language:<span id="Language"></span></p>
-                </div>
-                <div class="ui">               
-                    <button class="ui primary button" type="button" id="returnBtn">Return</button>
-                    <button class="ui button" type="button" id="MoreDetailBtn">More Details</button>
-                    
-                </div>
-
             </div>
-
-         
+            <div class="right floated six wide column movietitle-container" id="movietitle-container">
+                <h2><span id="movietitle">Movie title</span></h2>
+                <div class="ui segment">
+                    <img class="movieimage">
+                </div>
+            </div>
         </div>
-       
-    </div>
+      </div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -10,73 +10,27 @@
 </head>
 
 <body>
-  <div class="ui center aligned grid very padded">
-    <div class="ui row">
-      <div class="ui fourteen wide centred column">
-        <form class="ui large form container">
-          <div class="ui tertiary teal inverted segment">
-              <h2 class="ui image header">
-                  Movie Madness
-                  <br>             
-              </h2>
 
-              <div class="ui grid container "> 
-                <div class="ui sixteen wide column">
-                  <div class="ui fluid input">
-                    <input type="text" placeholder="Please entre movie title" id="MovieTitle">
-
-                      <button class="ui button" id="searchBtn" type="button">Search</button>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <br>
-              <br>
-
-              <div class="ui grid container ">
-                <div class="ui column">
-                  <div class="ui focus labeled fluid input">
-                    <div class="ui label">
-                      Season:
-                    </div>
-                    <input type="text" placeholder="1" id="SeasonNumber">
-                  </div>
-                </div>
-              </div>
-            
-              <div class="ui grid container">
-                <div class="ui column">
-                  <div class="ui labeled fluid input ">
-                    <div class="ui label">
-                      Episode:
-                    </div>
-                  <input type="text" placeholder="1" id="EpisodeNumber">
-                  </div>  
-                </div>             
-              </div>
-
-              <div class="ui grid container ">
-                <div class="ui column">
-                  <div class="ui labeled focus fluid input">
-                    <div class="ui label">
-                      Year of Release:
-                    </div>
-                    <input type="text" placeholder="year" id="YearofRelease">
-                  </div>
-                </div>
-              </div>
-
-              <br>
-              <br>
-
-            </div> 
-        </form>
-
-      
+   <div class="ui center aligned container fluid segments" id="maincontainer">
+    <h1 class="ui header">Movie Madness</h1>
+    <div class="ui searchcontainer center aligned fluid">
+      <div class="ui big input searchinput">
+        <input id="searchinput" type="text" placeholder="* Search for a movie">
+      </div>
+      <button class="ui huge blue button" id="searchbtn">Search</button>
+    </div>
+    <div class="ui optionalcontainer center aligned fluid">
+      <div class="ui big input year">
+        <input id="yearinput" type="text" placeholder="Year">
+      </div>
+      <div class="ui big input  IMDb">
+        <input id="IMBdinput" type="text" placeholder="IMDb id">
+      </div>
+      <div class="ui big input year media">
+        <input id="mediainput" type="text" placeholder="Type of media e.g. episode">
       </div>
     </div>
-  </div>
+   </div>
 
 
 
@@ -96,9 +50,10 @@
         </div>
       </div>
     </div>
+
   
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
 <script src="./assets/js/script.js"></script>  
 <script src="./assets/js/callOmbdAPI.js"></script> 

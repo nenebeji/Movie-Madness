@@ -1,0 +1,42 @@
+#maincontainer {
+    width: 70vw;
+    height: 55vh;
+    margin-top: 20vh;
+}
+
+#maincontainer h1 {
+    padding: 3rem;
+}
+
+.searchcontainer {
+    margin-top: -25px;
+}
+
+
+.input {
+    border: solid blue;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#searchbtn {
+    margin-left: 1rem;
+}
+
+.year {
+    width: 15%;
+    margin-right: 30px;
+}
+
+.optionalcontainer {
+    margin-top: 30px;
+}
+
+.IMDb {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.media {
+    width: 35%;
+}
