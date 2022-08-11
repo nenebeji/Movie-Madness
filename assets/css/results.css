@@ -1,0 +1,54 @@
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+pre {
+    font-size: 1.4rem;
+    line-height: 1.2; 
+}
+
+.moviedetails-container {
+   box-sizing: border-box;
+   border: solid red;
+   margin-top: 20px;
+   margin-left: 10px;
+   height: 95vh;
+}
+
+.movietitle-container h2 {
+    padding: 20px;
+    border: solid black;
+    margin-bottom: 3rem;
+}
+.movietitle-container {
+    border: solid red;
+    margin-top: 20px;
+    height: 95vh;
+    margin-right: 10px;
+}
+
+#player {
+    border: solid black;
+    min-width: 200px;
+    min-height: 350px;
+}
+
+.movieimage {
+    height: 65vh;
+}
+
+.plot {
+    box-sizing: border-box;
+    margin-top: 3rem;
+    border: solid red;
+    height: 35vh;
+    padding: 5px 0;
+}
+
+.ratings {
+    box-sizing: border-box;
+    margin-top: 3rem;
+    border: solid red;
+    height: 35vh;
+    padding: 5px 0;
+}

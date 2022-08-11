@@ -9,28 +9,30 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="ui header ">
-        <div class="ui menu">
-          <div class="header item">
-            <button class="ui primary button" id="option1">
-              Option 1
-            </button>
-          </div>
-          <a class="item">
-            <button class="ui button">
-              Option 2
-            </button>
-          </a>
-          <a class="item">
-            <h1 >Movie Madness</h1>
-          </a>
-          <a class="item">
-          </a>
-        </div>
-    </header>
+   <div class="ui center aligned container fluid segments" id="maincontainer">
+    <h1 class="ui header">Movie Madness</h1>
+    <div class="ui searchcontainer center aligned fluid">
+      <div class="ui big input searchinput">
+        <input id="searchinput" type="text" placeholder="* Search for a movie">
+      </div>
+      <button class="ui huge blue button" id="searchbtn">Search</button>
+    </div>
+    <div class="ui optionalcontainer center aligned fluid">
+      <div class="ui big input year">
+        <input id="yearinput" type="text" placeholder="Year">
+      </div>
+      <div class="ui big input  IMDb">
+        <input id="IMBdinput" type="text" placeholder="IMDb id">
+      </div>
+      <div class="ui big input year media">
+        <input id="mediainput" type="text" placeholder="Type of media e.g. episode">
+      </div>
+    </div>
+   </div>
+
   
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
 <script src="./assets/js/script.js"></script>   
 </body>
