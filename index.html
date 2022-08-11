@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+
    <div class="ui center aligned container fluid segments" id="maincontainer">
     <h1 class="ui header">Movie Madness</h1>
     <div class="ui searchcontainer center aligned fluid">
@@ -30,10 +32,30 @@
     </div>
    </div>
 
+
+
+
+    <div class="ui basic modal">
+      <div class="ui icon header">
+        <i class="archive icon"></i>
+        Invalid Input
+      </div>
+      <div class="content" id="modalInnerText">
+        <p>Please try again!</p>
+      </div>
+      <div class="actions">
+        <div class="ui green ok inverted button">
+          <i class="checkmark icon"></i>
+          Yes
+        </div>
+      </div>
+    </div>
+
   
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
-<script src="./assets/js/script.js"></script>   
+<script src="./assets/js/script.js"></script>  
+<script src="./assets/js/callOmbdAPI.js"></script> 
 </body>
 </html>
