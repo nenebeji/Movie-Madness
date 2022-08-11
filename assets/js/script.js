@@ -48,7 +48,8 @@ function searchFunction(){
     movieTitle.value = "";
     return searchFunction;
   } else {
-    movieTitle = movieTitle.value;
+    movieTitle = movieTitle.value.replaceAll(" ", "+");
+
     year = year.value;
     episode = episode.value;
     season = season.value;
