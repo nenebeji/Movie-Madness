@@ -8,30 +8,99 @@
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header class="ui header ">
-        <div class="ui menu">
-          <div class="header item">
-            <button class="ui primary button" id="option1">
-              Option 1
-            </button>
-          </div>
-          <a class="item">
-            <button class="ui button">
-              Option 2
-            </button>
-          </a>
-          <a class="item">
-            <h1 >Movie Madness</h1>
-          </a>
-          <a class="item">
-          </a>
+  <div class="ui center aligned grid very padded">
+    <div class="ui row">
+      <div class="ui fourteen wide centred column">
+        <form class="ui large form container">
+          <div class="ui tertiary teal inverted segment">
+              <h2 class="ui image header">
+                  Movie Madness
+                  <br>             
+              </h2>
+
+              <div class="ui grid container "> 
+                <div class="ui sixteen wide column">
+                  <div class="ui fluid input">
+                    <input type="text" placeholder="Please entre movie title" id="MovieTitle">
+
+                      <button class="ui button" id="searchBtn" type="button">Search</button>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+
+              <div class="ui grid container ">
+                <div class="ui column">
+                  <div class="ui focus labeled fluid input">
+                    <div class="ui label">
+                      Season:
+                    </div>
+                    <input type="text" placeholder="1" id="SeasonNumber">
+                  </div>
+                </div>
+              </div>
+            
+              <div class="ui grid container">
+                <div class="ui column">
+                  <div class="ui labeled fluid input ">
+                    <div class="ui label">
+                      Episode:
+                    </div>
+                  <input type="text" placeholder="1" id="EpisodeNumber">
+                  </div>  
+                </div>             
+              </div>
+
+              <div class="ui grid container ">
+                <div class="ui column">
+                  <div class="ui labeled focus fluid input">
+                    <div class="ui label">
+                      Year of Release:
+                    </div>
+                    <input type="text" placeholder="year" id="YearofRelease">
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+
+            </div> 
+        </form>
+
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="ui basic modal">
+      <div class="ui icon header">
+        <i class="archive icon"></i>
+        Invalid Input
+      </div>
+      <div class="content" id="modalInnerText">
+        <p>Please try again!</p>
+      </div>
+      <div class="actions">
+        <div class="ui green ok inverted button">
+          <i class="checkmark icon"></i>
+          Yes
         </div>
-    </header>
+      </div>
+    </div>
   
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
-<script src="./assets/js/script.js"></script>   
+<script src="./assets/js/script.js"></script>  
+<script src="./assets/js/callOmbdAPI.js"></script> 
 </body>
 </html>
