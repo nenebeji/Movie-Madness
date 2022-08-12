@@ -22,15 +22,23 @@ function showOptionModal(){
       buttons: {
         "Search by Movie": function() {
           $( this ).dialog( "close" );
-          
+          return;
         },
         imbdId: function() {
           $( this ).dialog( "close" );
-          
+          $("#searchInputField").addClass("disabled");
+          searchBtn.removeEventListener("click", searchFunction);
+          searchBtn.addEventListener("click", searchFunctionImbdId);
         }
       }
     });
   } );
+}
+
+function searchFunctionImbdId(){
+  if (!imbdId.value){
+    $('#modal1').modal('show');
+  }
 }
 
 searchBtn.addEventListener("click", searchFunction);

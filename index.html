@@ -22,7 +22,7 @@
   <div class="ui center aligned container fluid segments" id="maincontainer">
     <h1 class="ui header opacity">Movie Madness <img class="opacity" src="./assets/FPimages/movies-icon-png-8.jpg.png"></h1>
     <div class="ui searchcontainer center aligned fluid">
-      <div class="ui big input searchinput">
+      <div class="ui big input searchinput" id="searchInputField">
         <input id="searchinput" type="text" placeholder="Search for a movie">
       </div>
       <button class="ui huge blue button" id="searchbtn">Search</button>
@@ -46,13 +46,12 @@
         <i class="archive icon"></i>
         Invalid Input
       </div>
-      <div class="content" id="modalInnerText">
+      <div class="ui center aligned container" id="modalInnerText">
         <p>Please try again!</p>
       </div>
       <div class="actions">
         <div class="ui green ok inverted button">
-          <i class="checkmark icon"></i>
-          Yes
+          Ok
         </div>
       </div>
     </div>
