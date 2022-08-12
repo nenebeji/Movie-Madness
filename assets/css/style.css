@@ -48,7 +48,6 @@ body::before {
 
 
 .input {
-    border: solid blue;
     border-radius: 5px;
     width: 70%;
 }
