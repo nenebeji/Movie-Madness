@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Movie Madness | Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/results.css">
+    <title>Movie Madness | Results</title>
 </head>
-<body class="body">
+
+<body>
     <div class="ui container fluid">
         <div class="ui grid">
             <div class="left floated nine wide column moviedetails-container" id="moviedetails-container">
@@ -17,33 +26,40 @@
                 <div class="ui grid container plotrate">
                     <div class="left floated nine wide column plot" id="plot">
                         <h2>Plot</h2>
-                        <p><span id="plot-info"></span>When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement</span></p>
+                        
+                        <p><span id="plot-info"></span>After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.
+                        </span></p>
+                    
                     </div>
                     <div class="right floated six wide column ratings" id="ratings">
                         <h2>Ratings</h2>
-                        <p>
                         <pre>
-Rotten Tomatoes:<span id="rottenT">0</span>%
+Rotten Tomatoes: <span id="rottenT">0</span>%
 IMDb Rating: <span id="IMDb-rating">0</span>
 Metacritic: <span id="metacritic">0</span>
-Metascore: <span id="metascore">0</span>
+Metascore: <span id="metascore">0</span>                      
                         </pre>
-                        </p>
                     </div>
                 </div>
             </div>
             <div class="right floated six wide column movietitle-container" id="movietitle-container">
-                <h2><span id="movietitle">Movie title</span></h2>
-                <div class="ui segment">
-                    <img class="movieimage">
+                <div class="movie-title">
+                    <h2 id="movietitle">Dumb & Dumber</h2>
+                </div>
+
+                <div class="ui segment" id="image">
+                    <div class="image-container">
+                        <img class="movieimage"></img>
+                 </div>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
-<script src="./assets/js/results.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
+    <script src="./assets/js/results.js"></script>
 </body>
+
 </html>
