@@ -32,7 +32,7 @@ function callOmbdAPI(movieTitle, year, media, imbdId){
       if (response.ok){
         response.json().then(function(data){
             console.debug(data);
-            if(data.Response==true){
+            if(data.Response==="True"){
                 DisplayOmbdResult(data);
             }
             else DisplayNoResult();
