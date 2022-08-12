@@ -23,13 +23,13 @@
     <h1 class="ui header opacity">Movie Madness <img class="opacity" src="./assets/FPimages/movies-icon-png-8.jpg.png"></h1>
     <div class="ui searchcontainer center aligned fluid">
       <div class="ui big input searchinput">
-        <input id="searchinput" type="text" placeholder="* Search for a movie">
+        <input id="searchinput" type="text" placeholder="Search for a movie">
       </div>
       <button class="ui huge blue button" id="searchbtn">Search</button>
     </div>
     <div class="ui optionalcontainer center aligned fluid">
       <div class="ui big input year">
-        <input id="yearinput" type="text" placeholder="* Year">
+        <input id="yearinput" type="text" placeholder="Year">
       </div>
       <div class="ui big input  IMDb">
         <input id="IMBdinput" type="text" placeholder="IMDb id">
@@ -41,7 +41,7 @@
   </div>
 
 
-    <div class="ui basic modal">
+    <div class="ui basic modal" id="modal1">
       <div class="ui icon header">
         <i class="archive icon"></i>
         Invalid Input
@@ -57,12 +57,15 @@
       </div>
     </div>
 
+    <div id="dialog-confirm" title="Empty the recycle bin?">
+      <p id="modalText2"><span class="ui-icon ui-icon-search" style="float:left; margin:12px 12px 20px 0;"></span>Would you like to search by imbd ID or movie title and year.</p>
+    </div>
+
   
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="./assets/js/script.js"></script>  
-<script src="./assets/js/callOmbdAPI.js"></script> 
 </body>
 </html>
