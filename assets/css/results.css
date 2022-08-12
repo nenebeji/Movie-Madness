@@ -1,54 +1,217 @@
-p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+* {
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+
 }
+
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+
 pre {
-    font-size: 1.4rem;
-    line-height: 1.2; 
+    font-size: 1.2rem;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-image: url("../img/lionking.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10vh;
 }
 
 .moviedetails-container {
-   box-sizing: border-box;
-   border: solid red;
-   margin-top: 20px;
-   margin-left: 10px;
-   height: 95vh;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 95vh;
+    background-color: none;
+
+
+
 }
 
 .movietitle-container h2 {
     padding: 20px;
-    border: solid black;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+
+
 }
+
 .movietitle-container {
-    border: solid red;
     margin-top: 20px;
     height: 95vh;
     margin-right: 10px;
+    align-items: center;
+
+
 }
 
 #player {
-    border: solid black;
     min-width: 200px;
     min-height: 350px;
+    background-color: black;
+
 }
 
-.movieimage {
-    height: 65vh;
-}
 
 .plot {
     box-sizing: border-box;
     margin-top: 3rem;
-    border: solid red;
     height: 35vh;
+    width: 100vh;
     padding: 5px 0;
+    background-color: black;
+    opacity: 0.8;
+
 }
 
 .ratings {
     box-sizing: border-box;
     margin-top: 3rem;
-    border: solid red;
     height: 35vh;
     padding: 5px 0;
+    background-color: black;
+    opacity: 0.8;
+
 }
+
+
+#movietitle {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.8;
+
+
+}
+
+
+#image {
+    text-align: center;
+    display: contents;
+
+}
+
+.movieimage {
+    width: 45vh;
+    height: 65vh;
+    margin-left: 30px;
+    background-image: url("../img/D&D.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 5vh;
+
+
+
+}
+
+.image-container {
+    margin-left: 8vh;
+    background-color: black;
+    height: 75vh;
+    width: 55vh;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body,
+    .moviedetails-container,
+    .movietitle-container {
+        padding: 0px;
+        margin: 0px;
+        background-repeat: repeat;
+        background-size: cover;
+
+
+
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    *,
+    .moviedetails-container,
+    .movietitle-container,
+    #player {
+
+        min-width: 25rem;
+        display: block;
+        margin: none;
+        margin-top: 20px;
+        height: fit-content;
+        width: fit-content;
+
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .plot,
+    .ratings,
+    #player,
+    .image-container,
+    .movietitle-container h2,
+    .segment
+
+     {
+        height: fit-content;
+        float: left;
+        margin-right: 10px;
+        min-width: 30rem;
+       
+       
+
+
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .movietitle-container,
+    .moviedetails-container {
+        margin-top: 15PX;
+       float: left;
+       margin-right: 10px;
+           }
+}
+
+
+@media screen and (max-width: 900px) {
+    .movieimage,
+    p
+    {
+        min-width: 25rem;
+      
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .movietitle-container
+    {
+        display: flex;
+        justify-content: left;
+        
+
+    }
+}
+
+
