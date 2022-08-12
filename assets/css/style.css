@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 body::before {
     content: "";
     background-image: url("../FPimages/thumb-1920-390565.jpg");
@@ -31,6 +32,8 @@ body::before {
 
 
 #maincontainer h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-size: 3rem;
     padding: 3rem;
     color: #fff;
