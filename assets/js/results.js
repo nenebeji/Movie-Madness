@@ -10,13 +10,8 @@ function init(){
     var params_arr = paramString.split('&');
     //location.href="./result.html/?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId; 
     let result = location.href.match("i=");
-    if (result[0] === "i="){
+    if (result == null){
         par = params_arr[0].split('=');
-        imbdId = par[1];
-        callOmbdAPIImbdID(imbdId);
-        return init;
-    }
-    par = params_arr[0].split('=');
     movieTitle=par[1];
     par = params_arr[1].split('=');
     year= par[1];
@@ -28,6 +23,13 @@ function init(){
     console.debug(movieTitle, year, media, imbdId);
     
     callOmbdAPI(movieTitle, year, media, imbdId);
+    } else if (result[0] === "i="){
+        par = params_arr[0].split('=');
+        imbdId = par[1];
+        callOmbdAPIImbdID(imbdId);
+        return init;
+    }
+    
 
 
 }
