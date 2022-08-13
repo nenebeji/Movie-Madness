@@ -34,8 +34,15 @@
       <div class="ui big input  IMDb">
         <input id="IMBdinput" type="text" placeholder="IMDb id">
       </div>
-      <div class="ui big input year media">
-        <input id="mediainput" type="text" placeholder="Type of media e.g. episode, series, movie">
+      <div class="ui big form">
+        <div class="field media">
+          <select class="ui fluid selection dropdown" name="mediainput" id="mediainput">
+            <option value="">Type of media</option>
+            <option value="Movie">Movie</option>
+            <option value="Series">Series</option>
+            <option value="Episode">Episode</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>

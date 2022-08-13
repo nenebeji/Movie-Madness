@@ -67,6 +67,10 @@ body::before {
 
 .optionalcontainer {
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .IMDb {
@@ -74,14 +78,13 @@ body::before {
     margin-right: 30px;
 }
 
-.media {
-    width: 35%;
-}
-
-  
   /* Small smartphones */
   
   @media screen and (max-width: 576px) {
+
+    #maincontainer {
+        height: 70vh;
+    }
    .input {
     width: 40%;
    }
@@ -99,9 +102,3 @@ body::before {
     width: 55%;
    }
 }
-
-@media screen and (max-width: 380px) {
-    #maincontainer {
-        height: 70vh;
-    }
- }
