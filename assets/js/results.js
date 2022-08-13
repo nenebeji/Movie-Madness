@@ -155,15 +155,15 @@ function DisplayOmbdResult(OmbdData){
     for (i=0; i<OmbdData.Ratings.length; i++){
         if(OmbdData.Ratings[i].Source === "Rotten Tomatoes")  {
             $('#rottenT').text(OmbdData.Ratings[i].Value);
-            console.debug(OmbdData.Ratings[1].Value);
+            console.debug(OmbdData.Ratings[i].Value);
             break;
         } else   $('#rottenT').text("N/A")
     }
         
     for (i=0; i<OmbdData.Ratings.length; i++){
         if(OmbdData.Ratings[i].Source === "Metacritic")  {
-            $('#metacritic').text(OmbdData.Ratings[1].Value);
-            console.debug(OmbdData.Ratings[1].Value);
+            $('#metacritic').text(OmbdData.Ratings[i].Value);
+            console.debug(OmbdData.Ratings[i].Value);
             break;
         }
         else  $('#metacritic').text("N/A")

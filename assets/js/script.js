@@ -58,6 +58,7 @@ function autoSearch(){
 function searchFunction(){
   if(!movieTitle.value){
     $('#modal1').modal('show');
+    $('#modalInnerText').text("Please input a Movie Title");
     year.value = "";
     return searchFunction;
   } else if (!year.value || isNaN(year.value)){
@@ -67,8 +68,10 @@ function searchFunction(){
     return searchFunction;
   } else {
     movieTitle = movieTitle.value.replaceAll(" ", "+");
-    prevSearches.push(movieTitle);
-    localStorage.setItem("searches", JSON.stringify(prevSearches));
+    if (!prevSearches.includes(movieTitle)){ 
+      prevSearches.push(movieTitle);
+      localStorage.setItem("searches", JSON.stringify(prevSearches));
+    }
     year = year.value;
     media = media.value;
     imbdId = imbdId.value;
