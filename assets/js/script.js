@@ -28,7 +28,7 @@ function showOptionModal(){
         },
         imbdId: function() {
           $( this ).dialog( "close" );
-          $("#searchInputField").addClass("disabled");
+          $("#SearchInput, #YearInput, #Media").addClass("disabled");
           searchBtn.removeEventListener("click", searchFunction);
           searchBtn.addEventListener("click", searchFunctionImbdId);
         }

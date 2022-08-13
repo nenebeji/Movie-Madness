@@ -154,4 +154,8 @@ function DisplayOmbdResult(OmbdData){
 
 }
 
+function returnFunc(){
+    location.assign("./index.html")
+}
+
 init();

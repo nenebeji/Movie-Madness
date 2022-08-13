@@ -1,3 +1,4 @@
+/* Sets font family and color to page */
 * {
     box-sizing: border-box;
     color: white;
@@ -6,7 +7,47 @@
 
 }
 
+/* Sets margin for home button */
+.button-container {
+    margin: 1vh 0vh 0vh 1vh;
+   
 
+}
+
+
+/* Styles the home button */
+.home-button {
+    background-color: black;
+    opacity: 0.8;
+    align-content: center;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Changes home button when you hover over it */
+.home-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+/* Google font setting for home icon */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        
+}
+
+/* Changes icon color on hover */
+.material-symbols-outlined:hover {
+    color: black;
+
+}
+
+/* Styles font within plot section */
 p {
     font-size: 1.1rem;
     line-height: 1.5;
@@ -14,7 +55,7 @@ p {
 
 }
 
-
+/* Styles font within ratings section */
 pre {
     font-size: 1.2rem;
     line-height: 1.7;
@@ -22,55 +63,45 @@ pre {
 
 }
 
+/* sets background image */
 body {
     background-image: url("../img/lionking.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 10vh;
+
+
 }
 
+
+/* Adds padding to the the outside container */
+.container {
+    padding: 2vh 12vh 20vh 8vh;
+
+}
+
+
+/* Sets heeightm margin and background to the Details div */
 .moviedetails-container {
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-left: 10px;
     height: 95vh;
     background-color: none;
-
-
-
+    margin: auto;
+    
 }
 
-.movietitle-container h2 {
-    padding: 20px;
-    margin-bottom: 1.5rem;
-    background-color: black;
-    opacity: 0.8;
-    color: white;
 
-
-}
-
-.movietitle-container {
-    margin-top: 20px;
-    height: 95vh;
-    margin-right: 10px;
-    align-items: center;
-
-
-}
-
-#player {
+/* Sets min size for you tube video container */
+.player-class {
     min-width: 200px;
     min-height: 350px;
     background-color: black;
+    margin: auto;
 
 }
 
-
+/* Styles plot section  */
 .plot {
-    box-sizing: border-box;
     margin-top: 3rem;
-    height: 35vh;
+    height: fit-content;
     width: 100vh;
     padding: 5px 0;
     background-color: black;
@@ -78,140 +109,121 @@ body {
 
 }
 
+/* Styles the ratings section */
 .ratings {
-    box-sizing: border-box;
     margin-top: 3rem;
-    height: 35vh;
-    padding: 5px 0;
+    height: fit-content;
+    padding: 5px;
     background-color: black;
     opacity: 0.8;
 
 }
 
 
-#movietitle {
-    text-align: center;
+/* Sets height for Movie tite and picture container */
+.movietitle-container {
+    height: 95vh;
+    align-items: center;
+
+}
+
+
+/* Styles the  */
+.movietitle-container h2 {
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    opacity: 0.8;
-
-
-}
-
-
-#image {
     text-align: center;
-    display: contents;
+
 
 }
 
+
+/* Centres and displays inside movie image */
+.segment {
+    display: contents;
+    margin: auto;
+
+}
+
+/* Sets a frame for movie iamge */
+.image-container {
+    background-color: black;
+    height: 70vh;
+    width: 50vh;
+    opacity: 0.8;
+    margin: auto;
+
+}
+
+
+/* Displays the movie image */
 .movieimage {
-    width: 45vh;
-    height: 65vh;
+    width: 40vh;
+    height: 60vh;
     margin-left: 30px;
     background-image: url("../img/D&D.jpg");
     background-position: center;
     background-size: cover;
-    margin: 5vh;
+    margin: auto;
 
 
 
 }
 
-.image-container {
-    margin-left: 8vh;
-    background-color: black;
-    height: 75vh;
-    width: 55vh;
-    opacity: 0.8;
-}
 
-
-@media screen and (max-width: 900px) {
+/* Setting to make page mobile responsive  */
+@media screen and (max-width: 1200px) {
 
     body,
+    .container,
     .moviedetails-container,
     .movietitle-container {
-        padding: 0px;
-        margin: 0px;
+        padding: 5px;
+        margin: auto;
         background-repeat: repeat;
         background-size: cover;
-
-
-
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-
-    *,
-    .moviedetails-container,
-    .movietitle-container,
-    #player {
-
-        min-width: 25rem;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 30rem;
+        margin-right: 5vh;
         display: block;
-        margin: none;
-        margin-top: 20px;
-        height: fit-content;
-        width: fit-content;
+        margin-bottom: 5vh;
+        float: none;
+
+
 
     }
 }
 
+/* Setting to make page mobile responsive  */
+@media screen and (max-width: 1200px) {
 
-
-@media screen and (max-width: 900px) {
-
+    .player-class,
     .plot,
     .ratings,
-    #player,
-    .image-container,
-    .movietitle-container h2,
-    .segment
-
-     {
-        height: fit-content;
-        float: left;
-        margin-right: 10px;
+    .movietitle-container h2,   
+    .segment    {
+        margin-top: 5vh;
         min-width: 30rem;
-       
-       
-
+        margin-right: 3vh;
 
     }
 }
 
 
-@media screen and (max-width: 900px) {
-    .movietitle-container,
-    .moviedetails-container {
-        margin-top: 15PX;
-       float: left;
-       margin-right: 10px;
-           }
+/* Setting to make page mobile responsive  */
+@media screen and (max-width: 1200px) {
+
+.movietitle-container h2   {
+    margin-top: 100px;
+
+}
 }
 
-
-@media screen and (max-width: 900px) {
-    .movieimage,
-    p
-    {
-        min-width: 25rem;
-      
-
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .movietitle-container
-    {
-        display: flex;
-        justify-content: left;
-        
-
-    }
-}
 
 
