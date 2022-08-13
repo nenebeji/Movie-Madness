@@ -3,6 +3,7 @@ var searchBtn = document.querySelector("#searchbtn");
 var year = document.querySelector("#yearinput");
 var media = document.querySelector("#mediainput");
 var imbdId = document.querySelector("#IMBdinput");
+var apikey = "27e13cea";
 
 var prevSearches = JSON.parse(localStorage.getItem("searches")) || [];
 
@@ -38,6 +39,9 @@ function showOptionModal(){
 function searchFunctionImbdId(){
   if (!imbdId.value){
     $('#modal1').modal('show');
+  } else {
+    imbdId = imbdId.value;
+    window.location.href="./results.html?i=" + imbdId;
   }
 }
 

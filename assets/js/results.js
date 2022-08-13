@@ -9,7 +9,13 @@ function init(){
     var paramString = urlString.split('?')[1];
     var params_arr = paramString.split('&');
     //location.href="./result.html/?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId; 
-
+    let result = location.href.match("i=");
+    if (result[0] === "i="){
+        par = params_arr[0].split('=');
+        imbdId = par[1];
+        callOmbdAPIImbdID(imbdId);
+        return init;
+    }
     par = params_arr[0].split('=');
     movieTitle=par[1];
     par = params_arr[1].split('=');
@@ -31,6 +37,8 @@ function callOmbdAPI(movieTitle, year, media, imbdId){
     var OmbdURL = "https://www.omdbapi.com/?t=" + movieTitle + "&y=" + year + "&apikey=" + apikey;
     if (media){
         callOmbdAPIMediaValidation(movieTitle, year, media);
+    } else if(imbdId){
+        callOmbdAPIImbdID(imbdId);
     } else {
         fetch(OmbdURL)
     .then(function(response){
@@ -61,8 +69,24 @@ function callOmbdAPIMediaValidation(movieTitle, year, media){
     }
 }
 
-function callOmbdAPIMedia(){
+function callOmbdAPIMedia(movieTitle, year, media){
     var OmbdURL = "https://www.omdbapi.com/?t=" + movieTitle + "&y=" + year + "&type=" + media + "&apikey=" + apikey;
+    fetch(OmbdURL)
+    .then(function(response){
+      if (response.ok){
+        response.json().then(function(data){
+            console.debug(data);
+            if(data.Response==="True"){
+                DisplayOmbdResult(data);
+            }
+            else DisplayNoResult();
+        })
+      } else DisplayNoResult();
+    })
+}
+
+function callOmbdAPIImbdID(imbdId){
+    var OmbdURL = "https://www.omdbapi.com/?i=" + imbdId + "&apikey=" + apikey;
     fetch(OmbdURL)
     .then(function(response){
       if (response.ok){
