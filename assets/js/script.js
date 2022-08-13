@@ -3,10 +3,47 @@ var searchBtn = document.querySelector("#searchbtn");
 var year = document.querySelector("#yearinput");
 var media = document.querySelector("#mediainput");
 var imbdId = document.querySelector("#IMBdinput");
+var apikey = "27e13cea";
 
 var prevSearches = JSON.parse(localStorage.getItem("searches")) || [];
 
-autoSearch();
+function init(){
+  showOptionModal();
+  autoSearch();
+}
+
+
+function showOptionModal(){
+  $( function() {
+    $( "#dialog-confirm" ).dialog({
+      resizable: false,
+      height: "auto",
+      width: 400,
+      modal: true,
+      buttons: {
+        "Search by Movie": function() {
+          $( this ).dialog( "close" );
+          return;
+        },
+        imbdId: function() {
+          $( this ).dialog( "close" );
+          $("#searchInputField").addClass("disabled");
+          searchBtn.removeEventListener("click", searchFunction);
+          searchBtn.addEventListener("click", searchFunctionImbdId);
+        }
+      }
+    });
+  } );
+}
+
+function searchFunctionImbdId(){
+  if (!imbdId.value){
+    $('#modal1').modal('show');
+  } else {
+    imbdId = imbdId.value;
+    window.location.href="./results.html?i=" + imbdId;
+  }
+}
 
 searchBtn.addEventListener("click", searchFunction);
 
@@ -18,11 +55,11 @@ function autoSearch(){
 
 function searchFunction(){
   if(!movieTitle.value){
-    $('.ui.basic.modal').modal('show');
+    $('#modal1').modal('show');
     year.value = "";
     return searchFunction;
   } else if (!year.value || isNaN(year.value)){
-    $('.ui.basic.modal').modal('show');
+    $('#modal1').modal('show');
     $('#modalInnerText').text("Please input a year");
     movieTitle.value = "";
     return searchFunction;
@@ -43,3 +80,5 @@ function searchFunction(){
 
   }
 }
+
+init();
