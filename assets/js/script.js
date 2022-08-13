@@ -5,6 +5,7 @@ var media = document.querySelector("#mediainput");
 var imbdId = document.querySelector("#IMBdinput");
 var apikey = "27e13cea";
 
+$("#mediainput").dropdown();
 
 var prevSearches = JSON.parse(localStorage.getItem("searches")) || [];
 
