@@ -97,8 +97,18 @@ body::before {
     align-items: center;
    }
 
-   .year, .IMDb, .media {
+   .year, .IMDb {
     margin-bottom: 5%;
     width: 55%;
    }
+   .media {
+    width: 40vw;
+   }
+}
+
+@media screen and (max-width: 280px) {
+
+    .media {
+        width: 60vw;
+    }
 }
