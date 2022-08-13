@@ -1,1 +1,10 @@
-// Need function to return to main page
+var homeBtn = document.getElementById("home-btn")
+
+
+
+function homepage (){
+    window.location.href = "./index.html";
+}
+
+
+homeBtn.addEventListner('click', homepage)

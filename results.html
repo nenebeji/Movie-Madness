@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
@@ -19,37 +19,44 @@
 </head>
 
 <body>
+
+    <!-- Home button -->
+    <div class="button-container">
+        <button id="-home-btn" class="home-button"><span class="material-symbols-outlined">house</span></button>
+    </div>
+<!-- Outside container -->
     <div class="ui container fluid">
         <div class="ui grid">
             <div class="left floated nine wide column moviedetails-container" id="moviedetails-container">
-                <div id="player"></div>
+                <!-- Container for you tube video -->
+                <div class="player-class" id="player"></div>
                 <div class="ui grid container plotrate">
+                    <!-- container for movie plot -->
                     <div class="left floated nine wide column plot" id="plot">
                         <h2>Plot</h2>
-                        
-                        <p><span id="plot-info"></span>After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.
-                        </span></p>
-                    
+                        <p><span id="plot-info"></span></p>
                     </div>
                     <div class="right floated six wide column ratings" id="ratings">
+                        <!-- Container for ratings  -->
                         <h2>Ratings</h2>
                         <pre>
-Rotten Tomatoes: <span id="rottenT">0</span>%
-IMDb Rating: <span id="IMDb-rating">0</span>
-Metacritic: <span id="metacritic">0</span>
-Metascore: <span id="metascore">0</span>                      
-                        </pre>
+Rotten Tomatoes: <span id="rottenT"></span>%
+IMDb Rating: <span id="IMDb-rating"></span>
+Metacritic: <span id="metacritic"></span>
+Metascore: <span id="metascore"></span></pre>             
                     </div>
                 </div>
             </div>
+            <!-- container for title and image -->
             <div class="right floated six wide column movietitle-container" id="movietitle-container">
+                <!-- Container for title -->
                 <div class="movie-title">
-                    <h2 id="movietitle">Dumb & Dumber</h2>
+                    <h2 id="movietitle"></h2>
                 </div>
-
+                <!-- Container for image -->
                 <div class="ui segment" id="image">
                     <div class="image-container">
-                        <img class="movieimage"></img>
+                        <img class="movie-image"></img>
                  </div>
                 </div>
             </div>
@@ -63,3 +70,5 @@ Metascore: <span id="metascore">0</span>
 </body>
 
 </html>
+
+
