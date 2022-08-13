@@ -76,15 +76,15 @@ body {
 /* Adds padding to the the outside container */
 .container {
     padding: 2vh 12vh 20vh 8vh;
+
 }
 
 
 /* Sets heeightm margin and background to the Details div */
 .moviedetails-container {
-    /* box-sizing: border-box; */
-    margin: auto;
     height: 95vh;
     background-color: none;
+    margin: auto;
     
 }
 
