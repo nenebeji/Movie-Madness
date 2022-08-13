@@ -1,5 +1,6 @@
 // Need function to return to main page
 var apikey = "27e13cea";
+var youtubeKey = "AIzaSyDUla_RtU4IYdwWJnNwKrabj59IgSe3p0I";
 
 function init(){
 
@@ -30,6 +31,7 @@ function init(){
         return init;
     }
     
+    callYoutubeApi(movieTitle, year, media, imbdId);
 
 
 }
@@ -157,5 +159,40 @@ function DisplayOmbdResult(OmbdData){
 function returnFunc(){
     location.assign("./index.html")
 }
+
+function callYoutubeApi(title, year, media, id) {
+
+    var videoQueryUrl = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + title + '+' + year+ '&key='+ youtubeKey;     
+
+    fetch(videoQueryUrl)
+  .then(function (response) {
+    if (!response.ok) {
+      throw response.json();
+    }
+    return response.json();
+  })
+  .then(function (videoData) {
+    console.log(videoData);
+
+    if(!videoData.items) {
+        console.log('No results found!');   
+     
+    } else {
+        // display the first video from the list of query result        
+        videoID = videoData.items[0].id.videoId;
+        videoPlayer(title, year, videoID);       
+    }
+  })
+}
+
+function videoPlayer(title, year, videoID) {
+
+    var videoURL = 'http://www.youtube.com/embed/'+videoID;
+    var playerEl = "<iframe title='YouTube video player' type=\"text/html\" width='640' height='360' src="+ videoURL + " frameborder='0' allowFullScreen></iframe>";
+    console.log(playerEl);
+    
+    $("#player").html(playerEl);
+}
+
 
 init();
