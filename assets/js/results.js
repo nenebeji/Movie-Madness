@@ -1,3 +1,15 @@
+
+var homeBtn = document.getElementById("home-btn")
+
+
+
+function homepage (){
+    window.location.href = "./index.html";
+}
+
+
+homeBtn.addEventListner('click', homepage)
+
 // Need function to return to main page
 var apikey = "27e13cea";
 
@@ -155,3 +167,4 @@ function DisplayOmbdResult(OmbdData){
 }
 
 init();
+
