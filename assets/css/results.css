@@ -152,6 +152,9 @@ body {
 
 /* Sets a frame for movie iamge */
 .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     height: 70vh;
     width: 50vh;

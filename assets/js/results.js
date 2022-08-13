@@ -40,11 +40,28 @@ function init(){
 function callOmbdAPI(movieTitle, year, media, imbdId){
     var OmbdURL = "https://www.omdbapi.com/?t=" + movieTitle + "&y=" + year + "&apikey=" + apikey;
     if (media){
-        callOmbdAPIMediaValidation(movieTitle, year, media);
+        callOmbdAPIMediaValidation(movieTitle, year, media, OmbdURL);
     } else if(imbdId){
         callOmbdAPIImbdID(imbdId);
     } else {
-        fetch(OmbdURL)
+    //     fetch(OmbdURL)
+    // .then(function(response){
+    //   if (response.ok){
+    //     response.json().then(function(data){
+    //         console.debug(data);
+    //         if(data.Response==="True"){
+    //             DisplayOmbdResult(data);
+    //         }
+    //         else DisplayNoResult();
+    //     })
+    //   } else DisplayNoResult();
+    // })
+    fetchApiFunc(OmbdURL);
+  }
+    }
+
+function fetchApiFunc(OmbdURL){
+    fetch(OmbdURL)
     .then(function(response){
       if (response.ok){
         response.json().then(function(data){
@@ -56,15 +73,16 @@ function callOmbdAPI(movieTitle, year, media, imbdId){
         })
       } else DisplayNoResult();
     })
-  }
-    }
+}
     
 
-function callOmbdAPIMediaValidation(movieTitle, year, media){
+function callOmbdAPIMediaValidation(movieTitle, year, media, OmbdURL){
 
     if (media == "movie" || media == "series" || media == "episode"){
         callOmbdAPIMedia(movieTitle, year, media);
-    } else {
+    } else if(media == "None"){
+        fetchApiFunc(OmbdURL);
+    }else {
         $("#mediaText").show();
         $( "#dialogMedia" ).dialog({
             width: 400,
