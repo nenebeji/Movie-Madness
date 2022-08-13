@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Madness</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/dark-hive/jquery-ui.min.css" integrity="sha512-gCFexX+67Pl9rPa75MMyEH2I5jbD5tqij8VBYcsLVwgVfVEdfon+9CEjVnXPtqoHLXjxrjMcyHLaee65dt/jxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800;900&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-   <div class="ui center aligned container fluid segments" id="maincontainer">
-    <h1 class="ui header">Movie Madness</h1>
+  <div class="ui center aligned container fluid segments" id="maincontainer">
+    <h1 class="ui header opacity">Movie Madness <img class="opacity" src="./assets/FPimages/movies-icon-png-8.jpg.png"></h1>
     <div class="ui searchcontainer center aligned fluid">
       <div class="ui big input searchinput">
         <input id="searchinput" type="text" placeholder="* Search for a movie">
@@ -21,18 +29,20 @@
     </div>
     <div class="ui optionalcontainer center aligned fluid">
       <div class="ui big input year">
-        <input id="yearinput" type="text" placeholder="Year">
+        <input id="yearinput" type="text" placeholder="* Year">
       </div>
       <div class="ui big input  IMDb">
         <input id="IMBdinput" type="text" placeholder="IMDb id">
       </div>
       <div class="ui big input year media">
-        <input id="mediainput" type="text" placeholder="Type of media e.g. episode">
+        <input id="mediainput" type="text" placeholder="Type of media e.g. episode, series, movie">
       </div>
     </div>
-   </div>
+  </div>
 
-
+  <div id="dialog-confirm" title="Choose search parameters">
+    <p><span class="ui-icon ui-icon-search" style="float:left; margin:12px 12px 20px 0;"></span>You can choose to search by imbdID or movie title and year</p>
+  </div>
 
 
     <div class="ui basic modal">
@@ -55,7 +65,7 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="./assets/js/script.js"></script>  
-<script src="./assets/js/callOmbdAPI.js"></script> 
 </body>
 </html>

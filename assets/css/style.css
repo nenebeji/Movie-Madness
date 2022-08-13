@@ -1,11 +1,49 @@
+body {
+    box-sizing: border-box;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content: "";
+    background-image: url("../FPimages/thumb-1920-390565.jpg");
+    background-color: #021027;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.85;
+}
 #maincontainer {
+    position: relative;
     width: 70vw;
     height: 55vh;
     margin-top: 20vh;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background: rgba(0, 51, 51, 0.7);
 }
 
+
 #maincontainer h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
     padding: 3rem;
+    color: #fff;
+    opacity: 1;
+}
+
+#maincontainer h1 img {
+    font-size: 2rem;
+    margin-left: 20px;
 }
 
 .searchcontainer {
@@ -14,7 +52,6 @@
 
 
 .input {
-    border: solid blue;
     border-radius: 5px;
     width: 70%;
 }
@@ -40,3 +77,31 @@
 .media {
     width: 35%;
 }
+
+  
+  /* Small smartphones */
+  
+  @media screen and (max-width: 576px) {
+   .input {
+    width: 40%;
+   }
+   #maincontainer h1, #maincontainer h1 img {
+    font-size: 1.8rem;
+   }
+   .optionalcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .year, .IMDb, .media {
+    margin-bottom: 5%;
+    width: 55%;
+   }
+}
+
+@media screen and (max-width: 380px) {
+    #maincontainer {
+        height: 70vh;
+    }
+ }
