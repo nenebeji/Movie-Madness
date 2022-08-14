@@ -92,12 +92,22 @@ body {
 
 /* Sets min size for you tube video container */
 .player-class {
-    min-width: 200px;
-    min-height: 350px;
     background-color: black;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 54.5rem;
+    height: 25rem;
+
+    
+}
+
+iframe {
+    width: 52.5rem;
+    height: 23rem;
     margin: auto;
 
 }
+
 
 /* Styles plot section  */
 .plot {
@@ -182,9 +192,8 @@ body {
 
 }
 
-
 /* Setting to make page mobile responsive  */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
 
     body,
     .container,
@@ -194,35 +203,91 @@ body {
         margin: auto;
         background-repeat: repeat;
         background-size: cover;
-        min-width: 16rem;
-        display: block;
-        float: none;
+        min-width: 45rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
     }
-}
 
-/* Setting to make page mobile responsive  */
-@media screen and (max-width: 1200px) {
 
-    .player-class,
     .plot,
-    .ratings,
-    .movietitle-container h2,
-    .segment,
-    .image-container {
+    .ratings    {
         margin-top: 5vh;
-        min-width: 16rem;
+        min-width: 45rem;
         margin-right: 3vh;
+        align-items: center;
 
     }
-}
-
-
-/* Setting to make page mobile responsive  */
-@media screen and (max-width: 1200px) {
 
     .movietitle-container h2 {
-        margin-top: 100px;
+        margin-top: 200px;
+    }
 
+    .button-container {
+        position: absolute;
+        top: 1vh;
+        left: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    .player-class {
+        width: 45rem;
+        height: 20rem;
+
+    }
+    iframe {
+        margin-top: 10vh;
+        width: 43rem;
+        height: 18rem;
+    }
+
+    }
+
+
+/* Setting to make page mobile responsive  */
+@media screen and (max-width: 500px) {
+
+    body,
+    .container,
+    .moviedetails-container,
+    .movietitle-container {
+        padding: 5px;
+        margin: auto;
+        background-repeat: repeat;
+        background-size: cover;
+        min-width: 25rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .plot,
+    .ratings,
+    .movietitle-container h2 {
+        margin-top: 10vh;
+        min-width: 25rem;
+
+    }
+
+    .movietitle-container {
+        margin-top: 200px;
+    }
+
+    .player-class {
+        width: 25rem;
+        height: 15rem;
+    
+    }
+
+    iframe {
+        margin-top: 10vh;
+        width: 23rem;
+        height: 13rem;
     }
 }
