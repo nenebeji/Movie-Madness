@@ -130,6 +130,7 @@ function DisplayNoResult(){
     $('#IMDb-rating').text("N/A");
     $('#rottenT').text("N/A");
     $('#metacritic').text("N/A");
+    $('#metascore').text("N/A");
     console.debug("no result");
 
 }
