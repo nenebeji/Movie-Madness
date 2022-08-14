@@ -22,6 +22,50 @@ body::before {
     left: 0px;
     opacity: 0.85;
 }
+
+/* Sets margin for home button */
+.search-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+   
+
+}
+
+
+/* Styles the home button */
+.search-button {  
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Changes home button when you hover over it */
+.search-button:hover{
+    background-color: white;
+    color: black;
+  } 
+
+
+/* Google font setting for home icon */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        
+}
+
+/* Changes icon color on hover */
+.material-symbols-outlined:hover {
+    color: black;
+
+}
+
 #maincontainer {
     position: relative;
     width: 70vw;
