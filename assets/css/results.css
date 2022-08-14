@@ -98,7 +98,7 @@ body {
     width: 54.5rem;
     height: 25rem;
 
-    
+
 }
 
 iframe {
@@ -193,66 +193,78 @@ iframe {
 }
 
 /* Setting to make page mobile responsive  */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 
-    body,
-    .container,
-    .moviedetails-container,
-    .movietitle-container {
-        padding: 5px;
-        margin: auto;
+    body {
         background-repeat: repeat;
         background-size: cover;
+    }
+
+    .movietitle-container {
+        margin-top: 100px;
+    }
+
+    .container,
+    .moviedetails-container,
+    .movietitle-container,
+    .plot,
+    .ratings,
+    .movietitle-container h2 {
+        padding: 5px;
         min-width: 45rem;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
+        margin-right: 10px;
+
 
     }
-
 
     .plot,
-    .ratings    {
-        margin-top: 5vh;
-        min-width: 45rem;
-        margin-right: 3vh;
-        align-items: center;
-
-    }
-
+    .ratings,
     .movietitle-container h2 {
-        margin-top: 200px;
+        margin-bottom: 2.5vh;
     }
 
     .button-container {
-        position: absolute;
+        display: block;
         top: 1vh;
         left: 1vh;
         margin-bottom: 2vh;
     }
 
     .player-class {
+        margin-top: 4vh;
         width: 45rem;
         height: 20rem;
 
     }
+
     iframe {
         margin-top: 10vh;
         width: 43rem;
         height: 18rem;
     }
 
-    }
+
+}
 
 
 /* Setting to make page mobile responsive  */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
-    body,
+    body {
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+
     .container,
     .moviedetails-container,
-    .movietitle-container {
+    .movietitle-container,
+    .plot,
+    .ratings,
+    .movietitle-container h2 {
         padding: 5px;
         margin: auto;
         background-repeat: repeat;
@@ -260,30 +272,37 @@ iframe {
         min-width: 25rem;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
 
     }
 
-
+    .container {
+        margin-top: 70px;
+    }
 
     .plot,
     .ratings,
     .movietitle-container h2 {
-        margin-top: 10vh;
-        min-width: 25rem;
+        margin-bottom: 2.5vh;
+    }
+
+    .button-container {
+        position: absolute;
+        display: block;
+        top: 1vh;
+        left: 1vh;
 
     }
 
-    .movietitle-container {
-        margin-top: 200px;
-    }
+
 
     .player-class {
         margin-top: 10px;
         width: 25rem;
         height: 15rem;
-    
+        margin-bottom: 2.5vh;
+
     }
 
     iframe {
