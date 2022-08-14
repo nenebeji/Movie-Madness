@@ -24,7 +24,7 @@ body::before {
 }
 
 /* Sets margin for home button */
-.button-container {
+.search-container {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -34,7 +34,7 @@ body::before {
 
 
 /* Styles the home button */
-.home-button {  
+.search-button {  
     background-color: black;
     color: white;
     opacity: 0.8;
@@ -44,7 +44,7 @@ body::before {
 }
 
 /* Changes home button when you hover over it */
-.home-button:hover{
+.search-button:hover{
     background-color: white;
     color: black;
   } 

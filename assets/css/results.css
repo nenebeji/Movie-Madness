@@ -280,14 +280,15 @@ iframe {
     }
 
     .player-class {
+        margin-top: 10px;
         width: 25rem;
         height: 15rem;
     
     }
 
     iframe {
-        margin-top: 10vh;
         width: 23rem;
         height: 13rem;
+        margin-bottom: 20px;
     }
 }
