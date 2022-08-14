@@ -10,7 +10,7 @@
 /* Sets margin for home button */
 .button-container {
     margin: 1vh 0vh 0vh 1vh;
-   
+
 
 }
 
@@ -28,7 +28,7 @@
 .home-button:hover {
     background-color: white;
     color: black;
-  }
+}
 
 
 /* Google font setting for home icon */
@@ -38,7 +38,6 @@
         'wght' 400,
         'GRAD' 0,
         'opsz' 48
-        
 }
 
 /* Changes icon color on hover */
@@ -75,6 +74,7 @@ body {
 
 /* Adds padding to the the outside container */
 .container {
+    box-sizing: border-box;
     padding: 2vh 12vh 20vh 8vh;
 
 }
@@ -82,10 +82,11 @@ body {
 
 /* Sets heeightm margin and background to the Details div */
 .moviedetails-container {
+    box-sizing: border-box;
     height: 95vh;
     background-color: none;
     margin: auto;
-    
+
 }
 
 
@@ -100,6 +101,7 @@ body {
 
 /* Styles plot section  */
 .plot {
+    box-sizing: border-box;
     margin-top: 3rem;
     height: fit-content;
     width: 100vh;
@@ -111,6 +113,7 @@ body {
 
 /* Styles the ratings section */
 .ratings {
+    box-sizing: border-box;
     margin-top: 3rem;
     height: fit-content;
     padding: 5px;
@@ -130,6 +133,7 @@ body {
 
 /* Styles the  */
 .movietitle-container h2 {
+    box-sizing: border-box;
     padding: 20px;
     margin-bottom: 1.5rem;
     background-color: black;
@@ -145,6 +149,7 @@ body {
 
 /* Centres and displays inside movie image */
 .segment {
+    box-sizing: border-box;
     display: contents;
     margin: auto;
 
@@ -152,9 +157,7 @@ body {
 
 /* Sets a frame for movie iamge */
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
     background-color: black;
     height: 70vh;
     width: 50vh;
@@ -166,13 +169,14 @@ body {
 
 /* Displays the movie image */
 .movieimage {
-    width: 40vh;
-    height: 60vh;
-    margin-left: 30px;
-    background-image: url("../img/D&D.jpg");
+    box-sizing: border-box;
+    width: 44vh;
+    height: 64vh;
+    /* background-image: url("../img/lionking.jpg"); */
     background-position: center;
     background-size: cover;
-    margin: auto;
+    margin: 3vh 0vh 0vh 3vh;
+
 
 
 
@@ -190,15 +194,9 @@ body {
         margin: auto;
         background-repeat: repeat;
         background-size: cover;
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 30rem;
-        margin-right: 5vh;
+        min-width: 16rem;
         display: block;
-        margin-bottom: 5vh;
         float: none;
-
-
 
     }
 }
@@ -209,10 +207,11 @@ body {
     .player-class,
     .plot,
     .ratings,
-    .movietitle-container h2,   
-    .segment    {
+    .movietitle-container h2,
+    .segment,
+    .image-container {
         margin-top: 5vh;
-        min-width: 30rem;
+        min-width: 16rem;
         margin-right: 3vh;
 
     }
@@ -222,11 +221,8 @@ body {
 /* Setting to make page mobile responsive  */
 @media screen and (max-width: 1200px) {
 
-.movietitle-container h2   {
-    margin-top: 100px;
+    .movietitle-container h2 {
+        margin-top: 100px;
 
+    }
 }
-}
-
-
-

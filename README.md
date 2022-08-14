@@ -1,10 +1,29 @@
-
 # Movie-Madness
 
+We were assigned to a group of five and given a project to design and create a website, which had to inculde the following functionalities:
+
+* Use a CSS framework other than Bootstrap
+* Must be responsive to user input
+* Use at least two API's 
+* Utilise client side storage
+* Use a modal pop-up
 
 
 
 # Actions taken 
+
+As a group we sat down and reviewed the API's at our disposal. We decided on a movie search website which used the OMDB and You Tube API's. 
+
+* OMDB - returned the movie name, plot, ratings (IMDb, Rotten Tomatoes etc), boxset image and You Tube id for the movie trailer
+* You Tube - Using the ID from the OMDB API call, we were able to display the movie trailer on You Tube
+
+We then broke the task down in to sections and assigned each person with a list of tasks to complete.
+
+* Beji Oritsegidenene - CSS, HTML for search page and javascript
+* Mike Hui - Javascript, You Tube API call 
+* Catherine Au - Javascript, model
+* Abdela Hersi - Javascript, OMDB API  
+* Dave Monaghan - CSS, HTML for results page & READme file
 
 
 
@@ -12,40 +31,54 @@
 
 * HTML 
 * CSS
-* 
+* Javascript
 
 
 # Screenshots
 
-![image](https://user-images.githubusercontent.com/103275458/178838294-5a9bd76e-5e4b-4c55-839e-e62b838a3c08.png)
+![image](https://user-images.githubusercontent.com/103275458/184494691-1781e14f-3a73-4e18-a4f9-6a72017c57b7.png)
 
 
 # Links to Project:
 
-https://github.com/DaveMon79/Professional-Portfolio
-
-https://davemon79.github.io/Professional-Portfolio/
+https://github.com/nenebeji/Movie-Madness
 
 
 # Difficulties
 
-This project was extremely challenging. Once I’d decided on my design, I had found the following issues difficult to resolve:
+The main difficulties we experienced on this project were for the API calls, and javascript to make them function as we'd envisaged.
 
-* Using the display and position properties to make page look how I’d envisaged it
-* Overlaying work images with a label
-* Making the page tablet and mobile responsive
+
+# Success
+
+We were able to complete the project using all the funtionalties we planned to incorperate, but our main success was how well worked together as a team.
+
+Each team member displayed these attributes:
+
+* Excellent commincation
+* Always on hand to support others when required
+* Work ethic
+* Knowledge to complete the project
 
 
 # Credits
 
-* My Tutor - Navpreet Ahuja 
-* You Tube - Tutorial videos
-* https://www.w3schools.com/ - for code tips
+* Beji Oritsegidenene 
+* Mike Hui
+* Catherine Au
+* Abdaleh Hersi
+* Dave Monaghan 
 
 
-# Contact me
+# Contact info
 
-davemonaghan@gmx.com 
+https://github.com/nenebeji
+
+https://github.com/marycatau
+
+https://github.com/AbdalehHersi
+
+https://github.com/mikehui1124
 
 https://github.com/DaveMon79
 
@@ -56,4 +89,9 @@ University of Birmingham
 
 Trilogy Educational Services
 
+OMDB - API services 
+
+YouTube.com
+
 Horiseon Web Services
+
