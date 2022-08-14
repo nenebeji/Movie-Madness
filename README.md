@@ -1,4 +1,18 @@
-# Movie-Madness
+# Movie Madness
+![image](https://user-images.githubusercontent.com/103275458/184494691-1781e14f-3a73-4e18-a4f9-6a72017c57b7.png)
+
+## Description
+
+This application allows the user to view movies and series details including the ratings and trailer.
+
+* When a user clicks on the search icon on the homepage, then the user is presented with a prompt to search by movie or IMDbid.
+* A user can search for movie details using the movie title and year of release.
+* A user can also search for movie details using the IMDb id.
+* When a user clicks on the search button, then they are directed to the results page.
+* * The results page includes the trailer, plot, ratings, movie title and movie image.
+* A user can go back to the homepage by clicking on the home button on the top left corner of the results page.
+
+## Project plan
 
 We were assigned to a group of five and given a project to design and create a website, which had to inculde the following functionalities:
 
@@ -10,7 +24,7 @@ We were assigned to a group of five and given a project to design and create a w
 
 
 
-# Actions taken 
+## Actions taken 
 
 As a group we sat down and reviewed the API's at our disposal. We decided on a movie search website which used the OMDB and You Tube API's. 
 
@@ -27,31 +41,27 @@ We then broke the task down in to sections and assigned each person with a list 
 
 
 
-# Code Style
+## Code Style
 
 * HTML 
 * CSS
 * Javascript
 
 
-# Screenshots
 
-![image](https://user-images.githubusercontent.com/103275458/184494691-1781e14f-3a73-4e18-a4f9-6a72017c57b7.png)
-
-
-# Links to Project:
+## Links to Project:
 
 https://nenebeji.github.io/Movie-Madness/
 
 https://github.com/nenebeji/Movie-Madness
 
 
-# Difficulties
+## Difficulties
 
 The main difficulties we experienced on this project were for the API calls, and javascript to make them function as we'd envisaged.
 
 
-# Success
+## Success
 
 We were able to complete the project using all the funtionalties we planned to incorperate, but our main success was how well worked together as a team.
 
@@ -63,7 +73,7 @@ Each team member displayed these attributes:
 * Knowledge to complete the project
 
 
-# Credits
+## Credits
 
 * Beji Oritsegidenene 
 * Mike Hui
@@ -72,7 +82,7 @@ Each team member displayed these attributes:
 * Dave Monaghan 
 
 
-# Contact info
+## Contact info
 
 https://github.com/nenebeji
 
@@ -85,7 +95,7 @@ https://github.com/mikehui1124
 https://github.com/DaveMon79
 
 
-# License
+## License
 
 University of Birmingham
 
