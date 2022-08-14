@@ -20,9 +20,9 @@ As a group we sat down and reviewed the API's at our disposal. We decided on a m
 We then broke the task down in to sections and assigned each person with a list of tasks to complete.
 
 * Beji Oritsegidenene - CSS, HTML for search page and javascript
-* Mike Hui - Javascript, You Tube API call 
-* Catherine Au - Javascript, model
-* Abdela Hersi - Javascript, OMDB API  
+* Mike Hui - Javascript, You Tube API call function
+* Catherine Au - Javascript, display OMDB data function & modal  
+* Abdela Hersi - Javascript, OMDB API call, autoSearch function
 * Dave Monaghan - CSS, HTML for results page & READme file
 
 
@@ -32,6 +32,11 @@ We then broke the task down in to sections and assigned each person with a list 
 * HTML 
 * CSS
 * Javascript
+
+# Testing
+* The code was then checked at the following website for the web accessibility and the markup
+    * https://wave.webaim.org/
+    * https://validator.w3.org/
 
 
 # Screenshots
