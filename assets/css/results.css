@@ -180,7 +180,7 @@ iframe {
 
 
 /* Displays the movie image */
-.movie-image {
+.movieimage {
     box-sizing: border-box;
     width: 44vh;
     height: 64vh;
@@ -189,14 +189,11 @@ iframe {
     background-size: cover;
     margin: 3vh 0vh 0vh 3vh;
 
-
-
-
 }
 
 
 /* Settings to make page tablet & mobile responsive */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
     body {
         box-sizing: border-box;
         background-image: url("../img/lionking.jpg");
@@ -226,13 +223,14 @@ iframe {
     .player-class {
         margin-bottom: 2rem;
         width: 40rem;
-        height: 22vh;
+        height: 22rem;
 
     }
 
     iframe {
         width: 38rem;
         height: 20rem;
+        margin: auto;
 
     }
 
@@ -264,9 +262,10 @@ iframe {
 
 
     .player-class {
-        margin-bottom: 2vh;
+        margin: auto;
         width: 28rem;
         height: 15rem;
+
 
 
     }

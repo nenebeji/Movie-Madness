@@ -22,28 +22,29 @@
   
       <!-- Home button -->
       <div class="search-container">
-        <button id="search-btn" class="search-button" onclick="returnFunc()"><span class="material-symbols-outlined">search</span></button>
+        <button id="search-btn" class="search-button" onclick="showOptionModal()"><span class="material-symbols-outlined">search</span></button>
     </div>
 
   <div class="ui center aligned container fluid segments" id="maincontainer">
-    <h1 class="ui header opacity">Movie Madness <img class="opacity" src="./assets/FPimages/movies-icon-png-8.jpg.png"></h1>
+    <h1 class="ui header opacity">Movie Madness <img class="opacity" src="./assets/FPimages/movies-icon-png-8.jpg.png" alt="movie icon"></h1>
     <div class="ui searchcontainer center aligned fluid">
       <div class="ui big input searchinput" id="SearchInput">
-        <input id="searchinput" type="text" placeholder="* Search for a movie">
+        <input id="searchinput" type="text" placeholder="* Search for a movie" aria-label="Search for a movie">
       </div>
       <button class="ui huge blue button" id="searchbtn">Search</button>
     </div>
     <div class="ui optionalcontainer center aligned fluid">
       <div class="ui big input year" id="YearInput">
-        <input id="yearinput" type="text" placeholder="* Year">
+        <input id="yearinput" type="text" placeholder="* Year" aria-label="Year" >
       </div>
       <div class="ui big input  IMDb" id="IMBD">
-        <input id="IMBdinput" type="text" placeholder="IMDb id">
+        <input id="IMBdinput" type="text" placeholder="IMDb id" aria-label="IMBD ID" >
       </div>
       <div class="ui big form">
         <div class="field media" id="Media">
           <select class="ui fluid selection dropdown" name="mediainput" id="mediainput">
-            <option value="None">Select</option>
+            <option value="">Type of media</option>
+            <option value="None">None</option>
             <option value="movie">Movie</option>
             <option value="series">Series</option>
             <option value="episode">Episode</option>
@@ -60,7 +61,7 @@
 
     <div class="ui basic modal" id="modal1">
       <div class="ui icon header">
-        <i class="archive icon"></i>
+        <i class="exclamation icon"></i>
         Invalid Input
       </div>
       <div class="content" id="modalInnerText">
