@@ -88,9 +88,6 @@ function searchFunction(){
   }
 }
 
-<<<<<<< HEAD
+
 init();
 
-=======
-init();
->>>>>>> 0143f4ea59b017706a9275f0df8ee559499c47df
