@@ -1,6 +1,7 @@
 // Need function to return to main page
 var apikey = "27e13cea";
 var youtubeKey = "AIzaSyDUla_RtU4IYdwWJnNwKrabj59IgSe3p0I";
+var videoIndex = 1;
 
 function init(){
 
@@ -205,20 +206,38 @@ function callYoutubeApi(title, year, media, id) {
      
     } else {
         // display the first video from the list of query result        
-        videoID = videoData.items[0].id.videoId;
-        videoPlayer(title, year, videoID);       
+        videoID_1 = videoData.items[0].id.videoId;       
+
+        for (i=1; i<6; i++) {
+            localStorage.setItem(i, videoData.items[i-1].id.videoId);
+        }
+      
+        videoPlayer(videoID_1);              
+        //console.log(localStorage.getItem(1), localStorage.getItem(2), localStorage.getItem(3),localStorage.getItem(4),localStorage.getItem(5) );
     }
   })
 }
 
-function videoPlayer(title, year, videoID) {
+function videoPlayer(videoID_1) {
 
+    var videoID = localStorage.getItem(videoIndex);
     var videoURL = 'http://www.youtube.com/embed/'+videoID;
-    var playerEl = "<iframe title='YouTube video player' type=\"text/html\" width='640' height='360' src="+ videoURL + " frameborder='0' allowFullScreen></iframe>";
-    console.log(playerEl);
-    
-    $("#player").html(playerEl);
+    var playerEl = "<iframe title='YouTube video player' type=\"text/html\" width='640' height='360' src="+ videoURL + " frameborder='0' allowFullScreen></iframe>";            
+    $("#player").html(playerEl);  
 }
 
+function switchNext() {
+    if (videoIndex>0 && videoIndex <5) {
+        videoIndex++;
+        videoPlayer("videoID");
+    } 
+}
+
+function switchBack() {
+    if (videoIndex>1 && videoIndex <6) {
+        videoIndex--;
+        videoPlayer("videoID");
+    } 
+}
 
 init();
