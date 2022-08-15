@@ -156,6 +156,13 @@ function DisplayOmbdResult(OmbdData){
     for (i=0; i<OmbdData.Ratings.length; i++){
         if(OmbdData.Ratings[i].Source === "Rotten Tomatoes")  {
             $('#rottenT').text(OmbdData.Ratings[i].Value);
+            if (parseInt(OmbdData.Ratings[i].Value) > 60){
+                $('#rottenT').append(" 🍅");
+            } else if (parseInt(OmbdData.Ratings[i].Value) < 60){
+                $('#rottenT').append(" 🟢");
+            } else {
+                $("#rottenT").append(" 🚫");
+            }
             console.debug(OmbdData.Ratings[i].Value);
             break;
         } else   $('#rottenT').text("N/A")
