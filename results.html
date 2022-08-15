@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/dark-hive/jquery-ui.min.css" integrity="sha512-gCFexX+67Pl9rPa75MMyEH2I5jbD5tqij8VBYcsLVwgVfVEdfon+9CEjVnXPtqoHLXjxrjMcyHLaee65dt/jxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/dark-hive/jquery-ui.min.css"
+        integrity="sha512-gCFexX+67Pl9rPa75MMyEH2I5jbD5tqij8VBYcsLVwgVfVEdfon+9CEjVnXPtqoHLXjxrjMcyHLaee65dt/jxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="./assets/css/results.css">
     <title>Movie Madness | Results</title>
@@ -23,18 +29,20 @@
 
     <!-- Home button -->
     <div class="button-container">
+
         <button id="home-btn" class="home-button" onclick="returnFunc()"><span class="material-symbols-outlined">house</span></button>
         <button id="home-btn" class="home-button" onclick="switchBack()"><span class="material-symbols-outlined">arrow_back</span></button>
         <button id="home-btn" class="home-button" onclick="switchNext()"><span class="material-symbols-outlined">arrow_forward</span></button>
+
     </div>
-<!-- Outside container -->
+    <!-- Outside container -->
     <div class="ui container fluid">
         <div class="ui Stackable centered aligned grid">
             <div class="left floated nine wide column moviedetails-container" id="moviedetails-container">
                 <!-- Container of video, where <iframe> with youtube video will be added -->
-               
-                    <div class="player-class" id="player"></div>
-              
+
+                <div class="player-class" id="player"></div>
+
                 <div class="ui grid container plotrate">
                     <!-- container for movie plot -->
                     <div class="left floated nine wide column plot" id="plot">
@@ -50,13 +58,11 @@
 Rotten Tomatoes: <span id="rottenT"></span>
 IMDb Rating: <span id="IMDb-rating"></span>
 Metacritic: <span id="metacritic"></span>
-Metascore: <span id="metascore"></span></pre>             
+Metascore: <span id="metascore"></span></pre>
 
                     </div>
                 </div>
             </div>
-
-<section></section>
 
             <!-- container for title and image -->
             <div class="center aligned six wide column movietitle-container" id="movietitle-container">
@@ -70,9 +76,13 @@ Metascore: <span id="metascore"></span></pre>
                 <div class="ui left floated segment" id="image">
                     <div class="image-container">
 
-                        <img class="movieimage" id="movieimage" alt="movie image" src = "#">
 
-                 </div>
+                        <!-- <img class="movie-image" id="movieimage"></img> -->
+
+                        <img class="movieimage" id="movieimage" alt="movie image" src="#">
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,11 +93,11 @@ Metascore: <span id="metascore"></span></pre>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/Semantic-UI-CSS-master/semantic.min.js"></script>
     <script src="./assets/js/results.js"></script>
 </body>
 
 </html>
-
-
