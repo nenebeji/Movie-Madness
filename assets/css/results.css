@@ -177,12 +177,13 @@ iframe {
 }
 
 
+
 /* Displays the movie image */
 .movieimage {
     box-sizing: border-box;
     width: 44vh;
     height: 64vh;
-    /* background-image: url("../img/lionking.jpg"); */
+    background-image: url("../img/lionking.jpg");
     background-position: center;
     background-size: cover;
     margin: 3vh 0vh 0vh 3vh;
@@ -192,122 +193,96 @@ iframe {
 
 }
 
-/* Setting to make page mobile responsive  */
-@media screen and (max-width: 1300px) {
+
+/* Settings to make mobile responsive */
+@media screen and (max-width: 1400px) {
+
 
     body {
+        background-image: url("../img/lionking.jpg");
         background-repeat: repeat;
         background-size: cover;
     }
 
-    .movietitle-container {
-        margin-top: 100px;
-    }
-
     .container,
     .moviedetails-container,
+    .movietitle-container {
+        padding: 0;
+        min-height: fit-content;
+        margin: auto;
+        
+    
+    }
+
+
+    .plot,
+    .ratings,
+    .moviedetails-container,
     .movietitle-container,
-    .plot,
-    .ratings,
-    .movietitle-container h2 {
-        padding: 5px;
-        min-width: 45rem;
+    .movietitle {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-right: 10px;
-
+        align-content: center;
+        min-width: 39rem;
+        margin-top: 4vh;
+        
 
     }
 
-    .plot,
-    .ratings,
-    .movietitle-container h2 {
-        margin-bottom: 2.5vh;
+    .movietitle {
+        right: 10vh;
     }
 
-    .button-container {
-        display: block;
-        top: 1vh;
-        left: 1vh;
-        margin-bottom: 2vh;
+
+    
+
+    .image-container {
+        margin-top: 4vh;
     }
+
+
+    #movietitle {
+        min-width: 39rem;
+        margin: auto;
+
+    }
+
 
     .player-class {
-        margin-top: 4vh;
-        width: 45rem;
-        height: 20rem;
+        margin-bottom: 2vh;
+        width: 39rem;
+        height: 19rem;
+
 
     }
 
     iframe {
-        margin-top: 10vh;
-        width: 43rem;
+        width: 38rem;
         height: 18rem;
+
     }
-
-
 }
 
 
-/* Setting to make page mobile responsive  */
-@media screen and (max-width: 700px) {
-
-    body {
-        background-repeat: repeat;
-        background-size: cover;
+@media screen and (max-width: 1289px) {
+    .movietitle-container,
+    .movietitle {
+        margin-top: 0;
     }
 
+}
 
-    .container,
-    .moviedetails-container,
-    .movietitle-container,
+@media screen and (max-width: 768px) {
     .plot,
-    .ratings,
-    .movietitle-container h2 {
-        padding: 5px;
-        margin: auto;
-        background-repeat: repeat;
-        background-size: cover;
-        min-width: 25rem;
-        display: flex;
-        flex-direction: row;
-        /* align-items: center; */
-        justify-content: center;
-
+    .ratings {
+        right: 2vh;
     }
 
     .container {
-        margin-top: 70px;
+        box-sizing: border-box;
+        padding-right: 2vh;
     }
 
-    .plot,
-    .ratings,
-    .movietitle-container h2 {
-        margin-bottom: 2.5vh;
-    }
-
-    .button-container {
-        position: absolute;
-        display: block;
-        top: 1vh;
-        left: 1vh;
-
-    }
-
-
-
-    .player-class {
-        margin-top: 10px;
-        width: 25rem;
-        height: 15rem;
-        margin-bottom: 2.5vh;
-
-    }
-
-    iframe {
-        width: 23rem;
-        height: 13rem;
-        margin-bottom: 20px;
-    }
 }
+
