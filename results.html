@@ -27,7 +27,7 @@
     </div>
 <!-- Outside container -->
     <div class="ui container fluid">
-        <div class="ui grid">
+        <div class="ui Stackable centered aligned grid">
             <div class="left floated nine wide column moviedetails-container" id="moviedetails-container">
                 <!-- Container of video, where <iframe> with youtube video will be added -->
                
@@ -41,7 +41,7 @@
                         <p><span id="plot-info"></span></p>
 
                     </div>
-                    <div class="right floated six wide column ratings" id="ratings">
+                    <div class="left floated six wide column ratings" id="ratings">
                         <!-- Container for ratings  -->
                         <h2>Ratings</h2>
                         <pre>
@@ -57,16 +57,18 @@ Metascore: <span id="metascore"></span></pre>
 <section></section>
 
             <!-- container for title and image -->
-            <div class="right floated six wide column movietitle-container" id="movietitle-container">
+            <div class="center aligned six wide column movietitle-container" id="movietitle-container">
                 <!-- Container for title -->
+
                 <div class="movietitle">
+
                     <h2 id="movietitle"></h2>
                 </div>
                 <!-- Container for image -->
-                <div class="ui segment" id="image">
+                <div class="ui left floated segment" id="image">
                     <div class="image-container">
 
-                        <img class="movieimage" id="movieimage"></img>
+                        <img class="movieimage" id="movieimage" alt="movie image" src = "#">
 
                  </div>
                 </div>
