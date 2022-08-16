@@ -95,7 +95,7 @@ body {
     background-color: black;
     padding-left: 1rem;
     padding-top: 1rem;
-    width: 54.5rem;
+    width: 53rem;
     height: 25rem;
 
 
@@ -103,7 +103,7 @@ body {
 
 /* Sets the size of of you tube player in the frame */
 iframe {
-    width: 52.5rem;
+    width: 51rem;
     height: 23rem;
     margin: auto;
 
@@ -187,7 +187,8 @@ iframe {
     background-image: url("../img/lionking.jpg");
     background-position: center;
     background-size: cover;
-    margin: 3vh 0vh 0vh 3vh;
+    margin: auto;
+    margin-top: 1.5rem;
 
 }
 
@@ -218,6 +219,10 @@ iframe {
         margin-top: 4vh;
         
         
+    }
+
+    .movietitle-container {
+        margin-top: 12vh;
     }
 
     .player-class {
@@ -265,6 +270,7 @@ iframe {
         margin: auto;
         width: 28rem;
         height: 15rem;
+        margin-bottom: 2vh;
 
 
 
