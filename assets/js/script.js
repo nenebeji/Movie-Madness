@@ -88,6 +88,5 @@ function searchFunction(){
   }
 }
 
-
 init();
 
