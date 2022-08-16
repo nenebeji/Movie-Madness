@@ -48,10 +48,17 @@ We then broke the task down in to sections and assigned each person with a list 
 * Javascript
 
 # Testing
-* The code was then checked at the following website for the web accessibility and the markup
-    * https://wave.webaim.org/
-    * https://validator.w3.org/
 
+* The code was then checked at the following website for the web accessibility and the markup
+* https://wave.webaim.org/
+* https://validator.w3.org/
+
+
+## Images 
+
+![image](https://user-images.githubusercontent.com/103275458/184946483-18538fd6-2497-476c-99a5-9beb949cec6e.png)
+
+![image](https://user-images.githubusercontent.com/103275458/184947002-3dd3277c-01d1-4f97-8cd4-101aec5d6924.png)
 
 
 ## Links to Project:
