@@ -1,18 +1,16 @@
-// Need function to return to main page
 var apikey = "27e13cea";
 var youtubeKey = "AIzaSyDUla_RtU4IYdwWJnNwKrabj59IgSe3p0I";
 var videoIndex = 1;
 
 function init(){
 
-    $("#mediaText").hide();
+    $("#mediaText").hide(); //  hide modal
 
     var urlString=window.location.href;
     var paramString = urlString.split('?')[1];
     var params_arr = paramString.split('&');
-    //location.href="./result.html/?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId; 
     let result = location.href.match("i=");
-    if (result == null){
+    if (result == null){    //  normal params
         par = params_arr[0].split('=');
     movieTitle=par[1];
     par = params_arr[1].split('=');
@@ -22,10 +20,8 @@ function init(){
     par = params_arr[3].split('=');
     imbdId = par[1];
     
-    console.debug(movieTitle, year, media, imbdId);
-    
     callOmbdAPI(movieTitle, year, media, imbdId);
-    } else if (result[0] === "i="){
+    } else if (result[0] === "i="){     //  imbdID
         par = params_arr[0].split('=');
         imbdId = par[1];
         callOmbdAPIImbdID(imbdId);
@@ -45,18 +41,6 @@ function callOmbdAPI(movieTitle, year, media, imbdId){
     } else if(imbdId){
         callOmbdAPIImbdID(imbdId);
     } else {
-    //     fetch(OmbdURL)
-    // .then(function(response){
-    //   if (response.ok){
-    //     response.json().then(function(data){
-    //         console.debug(data);
-    //         if(data.Response==="True"){
-    //             DisplayOmbdResult(data);
-    //         }
-    //         else DisplayNoResult();
-    //     })
-    //   } else DisplayNoResult();
-    // })
     fetchApiFunc(OmbdURL);
   }
     }
@@ -66,7 +50,6 @@ function fetchApiFunc(OmbdURL){
     .then(function(response){
       if (response.ok){
         response.json().then(function(data){
-            console.debug(data);
             if(data.Response==="True"){
                 DisplayOmbdResult(data);
             }
@@ -77,7 +60,7 @@ function fetchApiFunc(OmbdURL){
 }
     
 
-function callOmbdAPIMediaValidation(movieTitle, year, media, OmbdURL){
+function callOmbdAPIMediaValidation(movieTitle, year, media, OmbdURL){      //      validation 
 
     if (media == "movie" || media == "series" || media == "episode"){
         callOmbdAPIMedia(movieTitle, year, media);
@@ -98,7 +81,6 @@ function callOmbdAPIMedia(movieTitle, year, media){
     .then(function(response){
       if (response.ok){
         response.json().then(function(data){
-            console.debug(data);
             if(data.Response==="True"){
                 DisplayOmbdResult(data);
             }
@@ -114,7 +96,6 @@ function callOmbdAPIImbdID(imbdId){
     .then(function(response){
       if (response.ok){
         response.json().then(function(data){
-            console.debug(data);
             if(data.Response==="True"){
                 DisplayOmbdResult(data);
             }
@@ -132,29 +113,22 @@ function DisplayNoResult(){
     $('#rottenT').text("N/A");
     $('#metacritic').text("N/A");
     $('#metascore').text("N/A");
-    console.debug("no result");
-
 }
 
 function DisplayOmbdResult(OmbdData){
 
 
     $('#plot-info').text(OmbdData.Plot);
-    console.debug(OmbdData.Plot);
     $('#movietitle').text(OmbdData.Title);
-    console.debug(OmbdData.Title);
     $('#movieimage').attr("src",OmbdData.Poster);
-    console.debug(OmbdData.Poster); 
     $('#IMDb-rating').text(OmbdData.imdbRating);
-    console.debug(OmbdData.imdbRating);
-
     if (OmbdData.Metascore !==''){
         $('#metascore').text(OmbdData.Metascore);
     } else{
         $('#metascore').text("N/A");
     }
 
-    for (i=0; i<OmbdData.Ratings.length; i++){
+    for (i=0; i<OmbdData.Ratings.length; i++){  //  rotten tomatoes ratings
         if(OmbdData.Ratings[i].Source === "Rotten Tomatoes")  {
             $('#rottenT').text(OmbdData.Ratings[i].Value);
             if (parseInt(OmbdData.Ratings[i].Value) > 60){
@@ -164,7 +138,6 @@ function DisplayOmbdResult(OmbdData){
             } else {
                 $("#rottenT").append(" 🚫");
             }
-            console.debug(OmbdData.Ratings[i].Value);
             break;
         } else   $('#rottenT').text("N/A")
     }
@@ -172,7 +145,6 @@ function DisplayOmbdResult(OmbdData){
     for (i=0; i<OmbdData.Ratings.length; i++){
         if(OmbdData.Ratings[i].Source === "Metacritic")  {
             $('#metacritic').text(OmbdData.Ratings[i].Value);
-            console.debug(OmbdData.Ratings[i].Value);
             break;
         }
         else  $('#metacritic').text("N/A")
@@ -199,11 +171,8 @@ function callYoutubeApi(title, year, media, id) {
     return response.json();
   })
   .then(function (videoData) {
-    console.log(videoData);
-
     if(!videoData.items) {
         console.log('No results found!');   
-     
     } else {
         // display the first video from the list of query result        
         videoID_1 = videoData.items[0].id.videoId;       
@@ -213,7 +182,6 @@ function callYoutubeApi(title, year, media, id) {
         }
       
         videoPlayer(videoID_1);              
-        //console.log(localStorage.getItem(1), localStorage.getItem(2), localStorage.getItem(3),localStorage.getItem(4),localStorage.getItem(5) );
     }
   })
 }
