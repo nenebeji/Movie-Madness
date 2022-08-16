@@ -1,5 +1,10 @@
 # Movie Madness
-![image](https://user-images.githubusercontent.com/103275458/184494691-1781e14f-3a73-4e18-a4f9-6a72017c57b7.png)
+
+![image](https://user-images.githubusercontent.com/103275458/184946483-18538fd6-2497-476c-99a5-9beb949cec6e.png)
+
+![image](https://user-images.githubusercontent.com/103275458/184947002-3dd3277c-01d1-4f97-8cd4-101aec5d6924.png)
+
+
 
 ## Description
 
@@ -48,9 +53,10 @@ We then broke the task down in to sections and assigned each person with a list 
 * Javascript
 
 # Testing
+
 * The code was then checked at the following website for the web accessibility and the markup
-    * https://wave.webaim.org/
-    * https://validator.w3.org/
+* https://wave.webaim.org/
+* https://validator.w3.org/
 
 
 
