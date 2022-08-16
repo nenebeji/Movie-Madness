@@ -14,7 +14,7 @@ function init(){
 }
 
 
-function showOptionModal(){
+function showOptionModal(){     //    shows option modal so the user can search by imbd ID or movie title and year
 $("#dialog-confirm p").show();
   $( function() {
     $( "#dialog-confirm" ).dialog({
@@ -26,7 +26,7 @@ $("#dialog-confirm p").show();
         "Search by Movie": function() {
           $( this ).dialog( "close" );
           $("#SearchInput, #YearInput, #Media").removeClass("disabled");
-          searchBtn.removeEventListener("click", searchFunctionImbdId);
+          searchBtn.removeEventListener("click", searchFunctionImbdId); //  remove previous event listeners so there is no bugs
           searchBtn.addEventListener("click", searchFunction);
         },
         imbdId: function() {
@@ -45,7 +45,7 @@ function searchFunctionImbdId(){
     $('#modal1').modal('show');
   } else {
     imbdId = imbdId.value;
-    window.location.href="./results.html?i=" + imbdId;
+    window.location.href="./results.html?i=" + imbdId;  //  take to results page          
   }
 }
 
@@ -79,10 +79,6 @@ function searchFunction(){
     imbdId = imbdId.value;
 
     //Pass parameter to the main page
-    console.debug(year,media,imbdId);
-     //location.href="./result.html/?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId; 
-     console.debug("./results.html?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId);
-     
      window.location.href="./results.html?t=" + movieTitle + "&y=" + year + "&m="+media+"&id="+ imbdId;
 
   }
