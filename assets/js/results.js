@@ -1,6 +1,6 @@
 var apikey = "27e13cea";
-var youtubeKey = "AIzaSyDUla_RtU4IYdwWJnNwKrabj59IgSe3p0I";
-var videoIndex = 1;
+var youtubeKey = "AIzaSyCaTvOE0rMtVOkH2w2yV5TTm6_CN3fGk8Y";
+var videoIndex = 1; 
 
 function init(){
 
@@ -158,7 +158,7 @@ function DisplayOmbdResult(OmbdData){
 function returnFunc(){
     location.assign("./index.html")
 }
-
+// second API call to youtube API
 function callYoutubeApi(title, year, media, id) {
 
     var videoQueryUrl = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + title + '+' + year+ '&key='+ youtubeKey;     
@@ -193,14 +193,14 @@ function videoPlayer(videoID_1) {
     var playerEl = "<iframe title='YouTube video player' type=\"text/html\" width='640' height='360' src="+ videoURL + " frameborder='0' allowFullScreen></iframe>";            
     $("#player").html(playerEl);  
 }
-
+// switch to next youtube video
 function switchNext() {
     if (videoIndex>0 && videoIndex <5) {
         videoIndex++;
         videoPlayer("videoID");
     } 
 }
-
+// switch to previous youtube video
 function switchBack() {
     if (videoIndex>1 && videoIndex <6) {
         videoIndex--;
