@@ -16,6 +16,7 @@ This application allows the user to view movies and series details including the
 * When a user clicks on the search button, then they are directed to the results page.
 * The results page includes the trailer, plot, ratings, movie title and movie image.
 * A user can go back to the homepage by clicking on the home button on the top left corner of the results page.
+* The User's search history is then stored and displayed as an autocomplete function when you click on the search input.
 
 ## Project plan
 
