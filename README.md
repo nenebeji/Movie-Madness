@@ -72,6 +72,9 @@ https://nenebeji.github.io/Movie-Madness/
 
 https://github.com/nenebeji/Movie-Madness
 
+## Presentation Slides
+https://docs.google.com/presentation/d/1fBD-MdVyEAVuy_T3rGS2G-e9vyk0kac9c3sITVoej7Q/edit?usp=sharing
+
 
 ## Difficulties
 
