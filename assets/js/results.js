@@ -189,7 +189,7 @@ function callYoutubeApi(title, year, media, id) {
 function videoPlayer(videoID_1) {
 
     var videoID = localStorage.getItem(videoIndex);
-    var videoURL = 'http://www.youtube.com/embed/'+videoID;
+    var videoURL = 'https://www.youtube.com/embed/'+videoID;
     var playerEl = "<iframe title='YouTube video player' type=\"text/html\" width='640' height='360' src="+ videoURL + " frameborder='0' allowFullScreen></iframe>";            
     $("#player").html(playerEl);  
 }

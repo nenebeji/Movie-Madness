@@ -27,7 +27,13 @@ We were assigned to a group of five and given a project to design and create a w
 * Utilise client side storage
 * Use a modal pop-up
 
-
+## Technology Used
+In this Application, we have used the following technology
+* Senmantic-UI
+* JQuery UI
+* Google Font
+* OMBD API & Youtube API
+* Media Query
 
 ## Actions taken 
 
