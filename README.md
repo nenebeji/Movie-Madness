@@ -10,7 +10,7 @@
 
 This application allows the user to view movies and series details including the ratings and trailer.
 
-* When a user clicks on the search icon on the homepage, then the user is presented with a prompt to search by movie or IMDbid.
+* When a user clicks on the search icon on the homepage, then the user is presented with a modal window to search by movie or IMDbid.
 * A user can search for movie details using the movie title and year of release.
 * A user can also search for movie details using the IMDb id.
 * When a user clicks on the search button, then they are directed to the results page.
@@ -27,7 +27,13 @@ We were assigned to a group of five and given a project to design and create a w
 * Utilise client side storage
 * Use a modal pop-up
 
-
+## Technology Used
+In this Application, we have used the following technology
+* Senmantic-UI
+* JQuery UI
+* Google Font
+* OMBD API & Youtube API
+* Media Query
 
 ## Actions taken 
 
